@@ -1,0 +1,24 @@
+<div class="formcontainer">
+    <div class="formbody">
+        <form style="width:100%;" [formGroup]="loginForm">
+            <div class="header">Welcome</div>
+                <mat-form-field style="width:100%;">
+                    <input type="text" formControlName="email" matInput placeholder="Username">
+                </mat-form-field>
+                <span *ngIf="isValid('myEmail', 'required')">Username cannot be blank</span>
+                <mat-form-field style="width:100%;">
+                    <input type="password" formControlName="password" matInput placeholder="Password">
+                </mat-form-field>
+                <span *ngIf="isValid('myPassword', 'required')">Password cannot be blank</span>
+
+            <div style="margin-top:20px;margin-bottom: 20px; text-align: center;">
+                <button class="form-btn" (click)="login()">Sign In</button>
+            </div>
+            <p (click)="movetoregister()" class="extrs">No account? Sign Up</p>
+        </form>
+    </div>
+
+        <!-- <div style="width: 290px; padding: 20px;">
+            <button class="form-btn-hollow" (click)="movetoregister()">Register</button>
+        </div> -->
+</div>
