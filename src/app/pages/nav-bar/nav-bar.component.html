@@ -7,7 +7,7 @@
   </div>
 
   <form action="" class="search-box-container">
-    <input type="search" id="search-box" placeholder="search here..."  class="input">
+    <input type="search" id="search-box" placeholder="search here..." class="input">
     <label for="search-box" class="search">
       <fa-icon [icon]="faSearch" style="padding: 10px; border-color: #D6D5D7;"></fa-icon>
     </label>
@@ -18,26 +18,30 @@
 
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="menu_icon">
     <mat-icon>menu</mat-icon>
-</button>
-<mat-menu #menu="matMenu">
-
+  </button>
+  <mat-menu #menu="matMenu">
     <div class="nav-item">
-        <a class="nav-link active" href="#home">Home</a>
+      <fa-icon [icon]="faHome"></fa-icon>
+      <a class="nav-link active" href="#home">Home</a>
     </div>
-    <div>
-        <a class="nav-link" href="#about">Category</a>
+    <div class="nav-item">
+      <fa-icon [icon]="faListAlt"></fa-icon>
+      <a class="nav-link" href="#category">Category</a>
     </div>
-    <div>
-        <a class="nav-link" href="#technology">Product</a>
+    <div class="nav-item">
+      <fa-icon [icon]="faShoppingBasket"></fa-icon>
+      <a class="nav-link" href="#products" (click)="goToPage()">Product</a>
     </div>
-    <div>
-        <a class="nav-link" href="#project">Deal</a>
+    <div class="nav-item">
+      <fa-icon [icon]="faGift"></fa-icon>
+      <a class="nav-link" href="#deals">Deal</a>
     </div>
-    <div>
-        <a class="nav-link" href="#contacts" tabindex="-1" aria-disabled="true">Contact</a>
+    <div class="nav-item">
+      <fa-icon [icon]="faPhone"></fa-icon>
+      <a class="nav-link" href="#contacts" tabindex="-1" aria-disabled="true">Contact</a>
     </div>
 
-</mat-menu>
+  </mat-menu>
 
   <nav class="navbar">
     <a href="#home">Home</a>
@@ -50,7 +54,9 @@
   <div class="icons">
     <fa-icon [icon]="faCartArrowDown" class="logo2"></fa-icon>
     <fa-icon [icon]="faHeart" class="logo2"></fa-icon>
-    <fa-icon [icon]="faUserCircle" class="logo2"></fa-icon>
+      <fa-icon [icon]="faUserCircle" class="logo2" (click)="Logout()" >
+      </fa-icon>
+
 
   </div>
 </mat-toolbar>

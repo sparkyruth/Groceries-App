@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faFilm,faShoppingBasket,faSearch, faCartArrowDown,faBars, faUserCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
-
+import { faFilm,faHome,faGift, faListAlt ,faPhone ,faShoppingBasket,faSearch, faCartArrowDown,faBars, faUserCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -14,10 +14,28 @@ export class NavBarComponent implements OnInit {
   faUserCircle=faUserCircle;
   faHeart=faHeart;
   faBars=faBars;
+  faHome=faHome;
+  faPhone=faPhone;
+  faGift=faGift;
+  faListAlt=faListAlt;
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  goToPage(){
+    // console.log(page)
+    this.router.navigateByUrl('/products')
+  }
+
+  showProfile(){
+    //for now show logout button
+  }
+
+  Logout(){
+    localStorage.removeItem('token');
+    this.router.navigate(['/mainDesk/login']);
   }
 
 }

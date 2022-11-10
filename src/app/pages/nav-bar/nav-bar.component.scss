@@ -17,11 +17,25 @@
     position: relative;
   }
 
+  .nav-item{
+    display: flex;
+    line-height: 1.7rem;
+    margin-left:5px;
+}
+  
+
   .logo{
     font-weight: bolder;
     font-size: 2rem;
     padding-right: .5rem;
     color:#1C9A5C;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: green;
+    margin-left: 7px;
+    /* background: chocolate; */
+    cursor: pointer;
   }
 
   .logo2{
@@ -29,6 +43,7 @@
     font-size: 2rem;
     padding-right: .5rem;
     color:#151B55;
+    cursor: pointer;
   }
   .search-box-container{
     display: flex;
@@ -113,6 +128,7 @@
     }
     .logo2 {
       font-size: 1.3rem;
+
   }
   }
   

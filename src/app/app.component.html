@@ -1,5 +1,5 @@
-<div class=container>
-    <app-nav-bar  *ngIf="(router.url !== '/mainDesk/login') && (router.url !== '/mainDesk/register')" ></app-nav-bar>
+<div class="container" *ngIf="!router.url.includes('/mainDesk')" >
+    <app-nav-bar></app-nav-bar>
 
 </div>
 <router-outlet></router-outlet>
