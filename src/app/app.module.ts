@@ -16,7 +16,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { MainDeskComponent } from './pages/main-desk/main-desk.component';
 import { UserService } from './services/user.service';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,11 +36,15 @@ import { UserService } from './services/user.service';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    MatIconModule,
+    MatToolbarModule,
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    MatMenuModule
 
   ],
   providers: [UserService],
