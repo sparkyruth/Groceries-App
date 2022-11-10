@@ -3,9 +3,9 @@
         <form style="width:100%;" [formGroup]="loginForm">
             <div class="header">Welcome</div>
                 <mat-form-field style="width:100%;">
-                    <input type="text" formControlName="email" matInput placeholder="Username">
+                    <input type="text" formControlName="email" matInput placeholder="Email">
                 </mat-form-field>
-                <span *ngIf="isValid('myEmail', 'required')">Username cannot be blank</span>
+                <span *ngIf="isValid('myEmail', 'required')">Email cannot be blank</span>
                 <mat-form-field style="width:100%;">
                     <input type="password" formControlName="password" matInput placeholder="Password">
                 </mat-form-field>

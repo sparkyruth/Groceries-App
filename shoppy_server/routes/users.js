@@ -6,7 +6,6 @@ console.log("GENERALLY%%%%%%%")
 
 router.post('/register', function(req,res,next){
 
-  console.log("are we reaching here....?********")
   var user = new User({
     email:req.body.email,
     username:req.body.username,
@@ -27,6 +26,8 @@ router.post('/register', function(req,res,next){
 
 router.post('/login', function(req,res,next){
   let promise = User.findOne({email:req.body.email}).exec();
+  console.log("are we reaching here....?********")
+
 
   promise.then(function(doc){
    if(doc) {

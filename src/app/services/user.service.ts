@@ -20,11 +20,11 @@ export class UserService {
     return this.http.post<any>(`${environment.backendAPIUrl}/users/register`, data);
   }
 
-  login(body:any){
-    return this.http.post('http://localhost:3000/users/login', body,{
-      observe:'body'
-    });
+  login(data: any): Observable<any> {
+    console.log("At frontend2...")
+    return this.http.post<any>(`${environment.backendAPIUrl}/users/login`, data);
   }
+
 
   getUserName() {
     return this.http.get('http://localhost:3000/users/username', {
