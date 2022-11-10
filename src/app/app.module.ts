@@ -15,6 +15,7 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { MainDeskComponent } from './pages/main-desk/main-desk.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { MainDeskComponent } from './pages/main-desk/main-desk.component';
     ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

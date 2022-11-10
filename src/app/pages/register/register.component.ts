@@ -61,12 +61,12 @@ export class RegisterComponent implements OnInit {
     console.log(this.myForm.value);
 
     if (this.myForm.valid) {
+      console.log("here")
       this.userService
-        .submitRegister(this.myForm.value)
-        .subscribe(
-          (data: any) => (this.successMessage = 'Registration Success')
-        ),
-        (error: any) => (this.successMessage = 'SOme error');
+        .submitRegister(this.myForm.value).subscribe((data: any)=>{
+          console.log(data)
+          this.successMessage = 'Registration Success'
+        })
     }
   }
 
