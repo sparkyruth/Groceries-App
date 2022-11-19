@@ -1,1 +1,19 @@
-<p>products works!</p>
+<div class="products_container">
+    <div class="title">
+        <h2>All Products</h2>
+    </div>
+    <div class="grid">
+        <div *ngFor="let product of shuffled_products" class="product">
+            <img  [src]="product.pic" alt="Img" style="width:100%">
+            <div class="product_info">
+                <span class="product_name">{{product.name}}</span>
+                <h3 class="product_price">{{product.price}}</h3>
+                <button mat-button class="product_button">Add to cart</button>
+        
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+

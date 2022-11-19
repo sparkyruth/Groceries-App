@@ -2,12 +2,12 @@
 
 <mat-toolbar color="" class="nav_bar">
   <div class="header">
-    <fa-icon [icon]="faShoppingBasket" class="logo"></fa-icon>
-    <span>Mboga</span>
+    <fa-icon [icon]="faShoppingCart" class="logo"></fa-icon>
+    <span>Freshi Barida</span>
   </div>
 
   <form action="" class="search-box-container">
-    <input type="search" id="search-box" placeholder="search here..." class="input">
+    <input type="search" id="search-box" placeholder="search for a product..." class="input">
     <label for="search-box" class="search">
       <fa-icon [icon]="faSearch" style="padding: 10px; border-color: #D6D5D7;"></fa-icon>
     </label>
@@ -25,16 +25,12 @@
       <a class="nav-link active" href="#home">Home</a>
     </div>
     <div class="nav-item">
-      <fa-icon [icon]="faListAlt"></fa-icon>
-      <a class="nav-link" href="#category">Category</a>
-    </div>
-    <div class="nav-item">
       <fa-icon [icon]="faShoppingBasket"></fa-icon>
-      <a class="nav-link" href="#products" (click)="goToPage()">Product</a>
+      <a class="nav-link" href="#products" (click)="goToPage()">Products</a>
     </div>
     <div class="nav-item">
       <fa-icon [icon]="faGift"></fa-icon>
-      <a class="nav-link" href="#deals">Deal</a>
+      <a class="nav-link" href="#About">About Us</a>
     </div>
     <div class="nav-item">
       <fa-icon [icon]="faPhone"></fa-icon>
@@ -45,9 +41,8 @@
 
   <nav class="navbar">
     <a href="#home">Home</a>
-    <a href="#category">Category</a>
     <a href="#product">Product</a>
-    <a href="#deal">Deal</a>
+    <a href="#About">About Us</a>
     <a href="#contact">Contact</a>
   </nav>
 

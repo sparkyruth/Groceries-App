@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faFilm,faHome,faGift, faListAlt ,faPhone ,faShoppingBasket,faSearch, faCartArrowDown,faBars, faUserCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faFilm,faHome,faGift, faListAlt ,faPhone, faShoppingCart ,faShoppingBasket,faSearch, faCartArrowDown,faBars, faUserCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav-bar',
@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
   filmIcon = faFilm;
-  faShoppingBasket=faShoppingBasket
+  faShoppingBasket=faShoppingBasket;
+  faShoppingCart=faShoppingCart;
   faSearch=faSearch;
   faCartArrowDown=faCartArrowDown;
   faUserCircle=faUserCircle;
