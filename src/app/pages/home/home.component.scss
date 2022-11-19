@@ -61,7 +61,7 @@
 
 .banner_container .banner {
   flex: 1 1 40rem;
-  height: 25rem;
+//   height: 25rem;
   overflow: hidden;
   position: relative;
 }
@@ -109,7 +109,6 @@
   font-family: "Nunito", sans-serif;
   color: black;
   // text-transform: uppercase;
-  padding: 1rem;
   font-size: 2.3rem;
   line-height: 1;
   font-weight: 400;
@@ -170,12 +169,23 @@
   display: block;
   font-family: "Nunito", sans-serif;
 }
+@media screen and (max-width: 450px) {
+.banner_container .banner img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
 
+  .banner_container .banner {
+   flex:0 0 0rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     padding: 2rem;
     display: block;
     text-align: center;
+    height:60%;
   }
   .banner_container {
     display: block;
@@ -186,7 +196,18 @@
   .box_container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .container .content span {
+    font-size: 2rem;
+    
+  }
+  
+  .container .content h3 {
+    font-size: 3rem;
+    
+  }
 }
+
 
 .category_grid {
   display: grid;
@@ -224,7 +245,7 @@
     font-size: 15px;
   }
   .container {
-    height: 95%;
+    height: 60%;
   }
 
   .banner_container .banner .content {
@@ -281,6 +302,8 @@
   grid-template-columns: 1fr 1fr 1fr ; /* Create 2 columns and auto-place rows */
   margin-top: 60px;
   column-gap: 40px;
+  row-gap: 35px;
+
 }
 
 .abt_info {
@@ -313,3 +336,36 @@
     border-radius: 30px;
     border: none;
   }
+//   .container {
+//     padding: 2rem;
+//     display: block;
+//     text-align: center;
+//   }
+
+@media screen and (max-width: 768px) {
+    .about {
+      padding: 2rem;
+      display: block;
+      text-align: center;
+    }
+    .about_grid {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr; /* Create 2 columns and auto-place rows */
+        margin-top: 60px;
+        column-gap: 0px;
+      }
+}
+
+@media screen and (max-width: 450px) {
+    .about {
+      padding: 2rem;
+      display: block;
+      text-align: center;
+    }
+    .about_grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Create 2 columns and auto-place rows */
+        margin-top: 60px;
+        column-gap: 0px;
+      }
+}
