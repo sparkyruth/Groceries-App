@@ -58,3 +58,21 @@ export const veg_products= [
     {name:'Doughnuts', price:'Price: Ksh 60', pic:'../../assets/images/products/donught.jpg'}
 
   ]
+  export const about=[
+    {
+      title: 'Fresh Produce',
+      description: 'We get our organic products from local farmers.',
+      image: 'https://assets-adara.s3.eu-central-1.amazonaws.com/izola-web/shared/community.svg',
+  },
+  {
+      title: 'Affordable Prices',
+      description: 'Our products are very affordable.',
+      image: 'https://assets-adara.s3.eu-central-1.amazonaws.com/izola-web/shared/doctor.svg',
+  },
+  {
+      title: 'Free Delivery',
+      description: "We deliver to your doorstep at your own convenience",
+      image: 'https://assets-adara.s3.eu-central-1.amazonaws.com/izola-web/shared/support.svg',
+  },
+  
+  ]

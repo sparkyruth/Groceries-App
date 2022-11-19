@@ -19,7 +19,8 @@ const routes: Routes = [
       ]
   },
   {path: 'home' , component: HomeComponent},
-  {path: 'products' , component: ProductsComponent}
+  {path: 'products' , component: ProductsComponent},
+  {path: 'products/:product-name' , component: ProductsComponent}
 
 ];
 

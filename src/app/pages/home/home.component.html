@@ -31,32 +31,47 @@
 </section>
 
 <section class="category">
-    <h1 class="heading">Shop by <span>category</span> </h1>
-    <div class="box_container">
-        <div class="box">
-            <h3>Vegetables</h3>
-            <p>Upto 50% off</p>
-            <img src="../../../assets/images/category-1.png" alt="">
-            <button class="banner_button">Shop now</button>
+    <h1 class="heading">Shop by <span style="font-size: 60px; font-weight:bolder;">category</span> </h1>
+    <!-- <div class="box_container"> -->
+        <div class="category_grid" >
+            <div *ngFor="let category of shuffled_categories" class="category ">
+                <h3 class="category_name">{{category.name}}</h3>
+                <img  [src]="category?.img" alt="Img" (click)="show_category(category?.name)">
+            </div>
         </div>
-        <div class="box">
-            <h3>Juice</h3>
-            <p>Upto 44% off</p>
-            <img src="../../../assets/images/category-2.png" alt="">
-            <button class="banner_button">Shop now</button>
+        <div style="text-align: center;">
+            <button class="products_button">View Products</button>
         </div>
-        <div class="box">
-            <h3>Meat</h3>
-            <p>Upto 44% off</p>
-            <img src="../../../assets/images/category-3.png" alt="">
-            <button class="banner_button">Shop now</button>
+
+     
+</section>
+
+<section class="About">
+   
+    <div class="about">
+        <div class="home_img2">
+            <img src="../../../assets/images/home-img.png" alt="" class="abt_img">
         </div>
-        <div class="box">
-            <h3>Fruit</h3>
-            <p>Upto 44% off</p>
-            <img src="../../../assets/images/category-4.png" alt="">
-            <button class="banner_button">Shop now</button>
+        <div class="abt_content">
+            <h1  class="abt_heading">Why Choose Us?</h1>
+            <div class=abt_intro>
+                <span>In a world polluted with processed and manufactured products, it is difficult to find organic produce in our markets. </span>
+                <span>Freshi Barida has come to fill in this gap and enable people to be able to enjoy a healthy lifestyle!</span>
+            </div>
+            <div class="about_grid" >
+                <div *ngFor="let desc of about_desc; let i = index" class="product" style="margin-right: 30px;">
+                    <img  [src]="desc.image" alt="Img" style="width:30%">
+                    <h2 style="margin-top: 10px; color:#666666; margin-left: 5px;">0{{i+1}}</h2>
+                    <div class="abt_info">
+                        <div class="desc_title">{{desc.title}}</div>
+                        <span class="full_desc">{{desc.description}}</span>
+                    </div>
+                </div>
+            </div>
+            <button class="abt_button">View More</button>
         </div>
     </div>
-
+   
+   
 </section>
+

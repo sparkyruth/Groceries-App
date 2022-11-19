@@ -21,6 +21,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ReactiveFormsModule,
     FontAwesomeModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    CarouselModule
 
   ],
   providers: [UserService],
