@@ -70,3 +70,33 @@
     font-family: "Nunito", sans-serif;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .product_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create 2 columns and auto-place rows */
+    // margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .category_grid img {
+
+    height: 100px;
+    
+  }
+
+  .product_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create 2 columns and auto-place rows */
+    // margin-top: 60px;
+  }
+  
+  .product_grid img {
+    height: 150px;
+  
+  }
+  
+
+}

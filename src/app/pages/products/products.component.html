@@ -9,7 +9,7 @@
     </div>
     <div *ngIf="showCategory===false">
         <div class="title">
-            <h2>All Products</h2>
+            <h2>{{filter_name}}</h2>
         </div>
         <div class="product_grid" >
             <div *ngFor="let product of shuffled_products" class="product">
@@ -25,7 +25,7 @@
 
     <div *ngIf="showCategory===true">
         <div class="title">
-            <h2>All Products</h2>
+            <h2>{{filter_name}}</h2>
         </div>
         <div class="product_grid" >
             <div *ngFor="let product of category_products" class="product">

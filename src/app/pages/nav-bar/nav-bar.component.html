@@ -7,9 +7,9 @@
   </div>
 
   <form action="" class="search-box-container">
-    <input type="search" id="search-box" placeholder="search for a product..." class="input">
+    <input type="search" id="search-box" placeholder="search..." class="input">
     <label for="search-box" class="search">
-      <fa-icon [icon]="faSearch" style="padding: 10px; border-color: #D6D5D7;"></fa-icon>
+      <fa-icon [icon]="faSearch" style="padding: 5px; border-color: #D6D5D7;"></fa-icon>
     </label>
   </form>
 </mat-toolbar>
@@ -22,28 +22,28 @@
   <mat-menu #menu="matMenu">
     <div class="nav-item">
       <fa-icon [icon]="faHome"></fa-icon>
-      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link active" href="home">Home</a>
     </div>
     <div class="nav-item">
       <fa-icon [icon]="faShoppingBasket"></fa-icon>
-      <a class="nav-link" href="#products" (click)="goToPage()">Products</a>
+      <a class="nav-link" href="products" (click)="goToPage()">Products</a>
     </div>
     <div class="nav-item">
       <fa-icon [icon]="faGift"></fa-icon>
-      <a class="nav-link" href="#About">About Us</a>
+      <a class="nav-link" href="about">About Us</a>
     </div>
     <div class="nav-item">
       <fa-icon [icon]="faPhone"></fa-icon>
-      <a class="nav-link" href="#contacts" tabindex="-1" aria-disabled="true">Contact</a>
+      <a class="nav-link" href="contacts" tabindex="-1" aria-disabled="true">Contact</a>
     </div>
 
   </mat-menu>
 
   <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#product">Products</a>
-    <a href="#About">About Us</a>
-    <a href="#contact">Contact</a>
+    <a href="home">Home</a>
+    <a href="products">Products</a>
+    <a href="about">About Us</a>
+    <a href="contact">Contact</a>
   </nav>
 
   <div class="icons">
