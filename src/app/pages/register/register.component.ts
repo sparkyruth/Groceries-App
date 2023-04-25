@@ -62,15 +62,15 @@ export class RegisterComponent implements OnInit {
 
     if (this.myForm.valid) {
       console.log("here")
-      this.userService
-        .submitRegister(this.myForm.value).subscribe((data: any)=>{
-          console.log(data)
-          this.successMessage = 'Registration Success'
-        })
+      // this.userService
+      //   .submitRegister(this.myForm.value).subscribe((data: any)=>{
+      //     console.log(data)
+      //     this.successMessage = 'Registration Success'
+      //   })
     }
   }
 
   movetologin() {
-    this._router.navigate(['../login'], { relativeTo: this._activatedRoute });
+    // this._router.navigate(['../login'], { relativeTo: this._activatedRoute });
   }
 }
