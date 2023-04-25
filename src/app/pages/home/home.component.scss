@@ -21,26 +21,26 @@
 }
 
 .container .content span {
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1;
   color: #666;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .container .content h3 {
-  font-size: 5rem;
-  font-weight: 100;
+  font-size: 4.6rem;
+  font-weight: 200;
   line-height: 0.9;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   margin-top: 15px;
 }
 
 .container .home_button {
   display: inline-block;
-  margin-top: 1rem;
-  background-color: #bf0000;
+  margin-top: 1.5rem;
+  background-color: #026918;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.7rem;
   text-align: center;
   cursor: pointer;
@@ -94,7 +94,7 @@
 .banner_button {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #bf0000;
+  background-color: #026918;
   color: white;
   padding: 0.5rem 1.5rem;
   font-size: 1.2rem;
@@ -106,7 +106,7 @@
 
 .heading {
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: black;
   // text-transform: uppercase;
   font-size: 2.3rem;
@@ -115,7 +115,7 @@
 }
 .abt_heading {
     // text-align: center;
-    font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     color: black;
     /* padding: 1rem; */
     font-size: 2.3rem;
@@ -126,7 +126,7 @@
 }
 
 .heading span {
-  color: #bf0000;
+  color: #026918;
   // text-transform: uppercase;
 }
 .category {
@@ -157,17 +157,17 @@
 .box h3 {
   font-size: 2rem;
   color: black;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 .box p {
   font-size: 1.3rem;
   color: #666;
   padding: 0.5rem 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 .category .box-container .box .banner_button {
   display: block;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 @media screen and (max-width: 450px) {
 .banner_container .banner img {
@@ -228,7 +228,7 @@
 }
 .category_name {
   font-size: 20px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   text-align: center;
   font-weight: bold;
 }
@@ -287,7 +287,7 @@
 .products_button {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #bf0000;
+  background-color: #026918;
   color: white;
   padding: 0.5rem 1.5rem;
   font-size: 1.2rem;
@@ -310,13 +310,13 @@
 //   text-align: center;
   .desc_title {
     font-size: 20px;
-    font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: bold;
     margin-bottom: 10px;
   }
   .full_desc {
     font-size: 18px;
-    font-family: "Nunito", sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
 .abt_intro {
@@ -327,7 +327,7 @@
 .abt_button {
     display: inline-block;
     margin-top: 3rem;
-    background-color: #bf0000;
+    background-color: #026918;
     color: white;
     padding: 0.5rem 1.5rem;
     font-size: 1.2rem;

@@ -29,22 +29,22 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.loginForm.value);
+    // console.log(this.loginForm.value);
 
-    if (this.loginForm.valid) {
-      this.userService.login(this.loginForm.value)
-        .subscribe(
-          (data:any) => {
-            console.log(data);
-            localStorage.setItem('token', data.toString());
-            this._router.navigate(['/home']);
-          },
-          // (error:any) => { }
-        );
-    }
+    // if (this.loginForm.valid) {
+    //   this.userService.login(this.loginForm.value)
+    //     .subscribe(
+    //       (data:any) => {
+    //         console.log(data);
+    //         localStorage.setItem('token', data.toString());
+    //         this._router.navigate(['/home']);
+    //       },
+    //       // (error:any) => { }
+    //     );
+    // }
   }
 
   movetoregister() {
-    this._router.navigate(['../register'], { relativeTo: this._activatedRoute });
+    // this._router.navigate(['../register'], { relativeTo: this._activatedRoute });
   }
 }
