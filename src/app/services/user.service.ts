@@ -20,17 +20,21 @@ export class UserService {
     return this.http.post<any>(`${environment.backendAPIUrl}/users/register`, data);
   }
 
-  login(data: any): Observable<any> {
-    console.log("At frontend2...")
-    return this.http.post<any>(`${environment.backendAPIUrl}/users/login`, data);
+  // login(data: any): Observable<any> {
+  //   console.log("At frontend2...")
+  //   return this.http.post<any>(`${environment.backendAPIUrl}/users/login`, data);
+  // }
+  login(data: any) {
+    // console.log("At frontend2...")
+    // return this.http.post<any>(`${environment.backendAPIUrl}/users/login`, data);
   }
 
 
   getUserName() {
-    return this.http.get('http://localhost:3000/users/username', {
-      observe: 'body',
-      params: new HttpParams().append('token', localStorage.getItem('token') as string)
-    });
+    // return this.http.get('http://localhost:3000/users/username', {
+    //   observe: 'body',
+    //   params: new HttpParams().append('token', localStorage.getItem('token') as string)
+    // });
   }
 
 }
