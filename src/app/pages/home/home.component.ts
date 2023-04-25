@@ -57,11 +57,11 @@ export class HomeComponent implements OnInit {
     private userService:UserService,
     private router: Router) { 
 
-      this.userService.getUserName().subscribe((data:any)=>{
-        this.username= data.toString()
-      }, (err:any)=>{
-        this.router.navigate(['/mainDesk/login'])
-      })
+      // this.userService.getUserName().subscribe((data:any)=>{
+      //   this.username= data.toString()
+      // }, (err:any)=>{
+      //   this.router.navigate(['/mainDesk/login'])
+      // })
    
     }
 
